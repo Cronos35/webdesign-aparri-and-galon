@@ -32,30 +32,32 @@ nav{
 nav ul{
     list-style: none;    
     display: flex;  
-    justify-content: end;
-    margin: 0;      
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;   
+    padding: 0;
 }
 
 nav li{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     padding: 0 10px 0 10px;
     font-size: 20px;
-    height: 100%;
+    height: 80px;
     align-items: center;
 }
+
 nav .mainlogo
 {      
     background-size: 300px;
     background-repeat: no-repeat;
     width: 300px;    
-    margin: 10px;
+    margin: 10px 50px 10px 10px;    
 }
 
 .currentpage{
     background-color: white;
-    color: #854801;
-    height: 100%;
+    color: #854801;    
 }
 
 nav a:hover{
@@ -79,16 +81,15 @@ nav a:hover{
 }
 
 .showcase img{
-    height: 400px;
-    width: 400px;               
+    height: 300px;
+    width: 300px;               
 }
 
 .logocircle{
     background-color: #FFD75E;
     padding: 70px;
-    margin-top: 175px;  
-    border-radius: 400px;
-
+    margin: 130px 0 30px 0;  
+    border-radius: 400px;    
 }
 
 .tagline{
