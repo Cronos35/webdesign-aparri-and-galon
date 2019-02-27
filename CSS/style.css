@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Aleo;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3{
+    font-family:futura;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+/*navigation bar*/
+
+nav{    
+    background-color: #854801;
+    display: flex;  
+    justify-content: space-evenly;    
+    position: fixed;
+    width: 100%;    
+}
+
+nav ul{
+    list-style: none;    
+    display: flex;  
+    justify-content: end;
+    margin: 0;      
+}
+
+nav li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    height: 100%;
+    align-items: center;
+}
+nav .mainlogo
+{      
+    background-size: 300px;
+    background-repeat: no-repeat;
+    width: 300px;    
+    margin: 10px;
+}
+
+.currentpage{
+    background-color: white;
+    color: #854801;
+    height: 100%;
+}
+
+nav a:hover{
+    background-color: #E39C01;
+    color: #854801;
+    height: 100%;
+}
+
+/*showcase area*/
+
+.showcase{    
+    width: 100%;
+    background-image: url('../Photos/architecture-bike-city-1070945.jpg');
+    background-size: 100%;
+    background-color: #ffd75e;
+    background-blend-mode: hard-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.showcase img{
+    height: 400px;
+    width: 400px;               
+}
+
+.logocircle{
+    background-color: #FFD75E;
+    padding: 70px;
+    margin-top: 175px;  
+    border-radius: 400px;
+
+}
+
+.tagline{
+    font-size: 40px;
+    color:  #854801;
+    font-weight: bold;
+    font-family: futura;
+}
+
+/*services area*/
+.services{
+    border-top: 5px solid #B85301;
+    height: auto;
+    width: 100%;
+    background-color: #B85301;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    background-image: url('../Photos/architecture-cafe-indoors-225448.jpg');
+    background-size: 100%;
+    background-position-y: -300px;
+    background-blend-mode: screen
+}
+
+.services h1{
+    color:  #854801;
+    border: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.services ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 180px;    
+    padding-right: 180px;
+}
+
+.services li{
+    margin: 10px;       
+    text-align: center;
+    background-color: #854801;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.services img, .visit img{    
+    margin: auto;
+    display: flex;
+    justify-content: center;      
+}
+
+.services img{
+    width: 100px;
+    margin-bottom: 20px;  
+}
+
+.services h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #854801;
+}
+
+/*reviews section*/
+.reviews h1{
+    border: none;
+    border-top: 20px solid white;
+    border-bottom: 25px solid white;
+    background-color: #CC8209;
+    padding: 0;
+    font-size: 70px;
+    
+}
+
+/*contact section*/
+
+.visit{
+    background-color:  #E39C01;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.visit h1{
+    border: none;
+    font-size: 50px;
+    padding: 30px 30px 10px 30px;
+
+}
+
+.visit p{
+    font-size: 25px;
+}
+
+.visit img{
+    width: 70px;
+    margin-bottom: 0;
+}
+
+/*footer*/
+
+footer{
+    background-color: #854801;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer li{
+    margin-top: 10px;
+}
+
+footer img{
+    width: 300px;
+}
+
+.copyright {
+    text-align: center;
+    font-family: Aleo;
+    font-size: 15px;
+    color: white;
+    align-items: baseline
+}
+
+.side-logo .copyright{
+    display: flex;
+}
+
+.mini-separator1 {
+    display: flex;
+    border-bottom: 5px solid white;
+    justify-content: center;
+    margin: auto;
+    width: 15%;
+    margin-bottom: 20px;
+}

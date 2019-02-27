@@ -1,0 +1,49 @@
+.head {
+    background-image: url("../Photos/barista-barista-girl-business-702251.jpg");    
+    background-size: 100%;
+    background-color: #854801;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    border-bottom: 10px solid #FFD75E;
+}
+
+.about-detail {
+    background-color: #CC8209;
+    background-image: url('../Photos/architecture-bike-city-1070945.jpg');
+    background-blend-mode: darken;
+    background-size: 100%;
+    width: 100%;
+    background-position-y: -5px;
+    padding-bottom: 30px;
+ }
+
+ .about-detail h2 {
+    font-family: futura;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.about-detail p {
+    font-family: Aleo;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.mini-separator {
+    display: flex;
+    border-bottom: 5px solid #E39C01;
+    justify-content: center;
+    margin: auto;
+    width: 20%;
+}

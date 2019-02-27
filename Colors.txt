@@ -1,0 +1,5 @@
+Level 1 = #FFD75E
+Level 2 = #E39C01
+Level 3 = #CC8209
+Level 4 = #854801
+Level 5 = #B85301
