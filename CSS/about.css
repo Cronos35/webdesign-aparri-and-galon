@@ -3,20 +3,21 @@
     background-size: 100%;
     background-color: #854801;
     background-blend-mode: overlay;
+    background-attachment: fixed;
+    padding-bottom: 150px;
 }
 
 .about-detail {
     background-color: #CC8209;
     background-image: url('../Photos/architecture-bike-city-1070945.jpg');
-    background-blend-mode: darken;
+    background-blend-mode: darken;   
+    background-attachment: fixed; 
     background-size: 100%;
     width: 100%;
-    background-position-y: -5px;
-    padding-bottom: 30px;
+    background-position-y: -5px;    
  }
 
- .about-detail h2 {
-    font-family: futura;
+ .about-detail h2 {    
     font-size: 60px;    
     margin-top: 50px;
     padding-left: 30px;
@@ -26,12 +27,12 @@
     text-align: center;
 }
 
-.about-detail article {
-    font-family: Aleo;
+.about-detail article {    
     font-size: 20px;
-    padding: 10px 150px 10px 150px;
+    padding: 40px 150px 40px 150px;
+    margin-top: 30px;
     text-align: center;
-
+    background: rgb(204, 130, 9, 0.8);    
 }
 
 .mini-separator {

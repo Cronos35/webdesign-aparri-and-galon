@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: Aleo;
     color: white;
+    overflow-x: hidden;
 }
 
 a{
@@ -12,7 +13,7 @@ a{
 
 h1, h2, h3{
     font-family:futura;
-    margin: 0;
+    margin: 0;    
 }
 
 ul{
@@ -22,28 +23,56 @@ ul{
 /*navigation bar*/
 
 nav{    
-    background-color: #854801;
-    display: flex;  
-    justify-content: space-evenly;    
+    background-color: #854801;    
     position: fixed;
-    width: 100%;    
+    width: 100%;        
 }
 
 nav ul{
     list-style: none;    
     display: flex;  
     justify-content: space-between;
-    margin: 0;
+    margin: 0;    
     align-items: center;   
     padding: 0;
 }
 
-nav li{
+nav a{
+    padding: 0 10px 0 10px
+}
+
+.firstleveldropdown{              
+    overflow: hidden;
+    max-height: 0;
     display: flex;
-    justify-content: space-between;    
-    padding: 0 10px 0 10px;
+    position: absolute;
+    top: 100%;    
+    flex-direction: column;
+    width: 150px;
+    justify-content: left;
+    transition: max-height 0.5s ease-in-out;                      
+}
+
+.firstleveldropdown li{
+    width: 150px;    
+    padding-left: 20px;                       
+}
+
+.firstleveldropdown a{
+    border-bottom: 3px solid white;     
+    background-color: #B85301;
+    color: white;      
+}
+
+nav ul li:hover > ul {
+    max-height: 300px;    
+}
+
+nav li, .navbarlink{
+    display: flex;
+    justify-content: space-between;        
     font-size: 20px;
-    height: 80px;
+    height: 60px;
     align-items: center;
 }
 
@@ -68,16 +97,17 @@ nav a:hover{
 
 /*showcase area*/
 
-.showcase{    
-    width: 100%;
-    background-image: url('../Photos/architecture-bike-city-1070945.jpg');
-    background-size: 100%;
-    background-color: #ffd75e;
-    background-blend-mode: hard-light;
+.showcase{
+    width: 100vw;    
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;    
+    background-size: 100%;
+    background-color: #ffd75e;
+    background-image: url('../Photos/architecture-bike-city-1070945.jpg');
+    background-blend-mode: screen;
+    background-attachment: fixed;
 }
 
 .showcase img{
@@ -86,7 +116,7 @@ nav a:hover{
 }
 
 .logocircle{
-    background-color: #FFD75E;
+    background-color: #E39C01;
     padding: 70px;
     margin: 130px 0 30px 0;  
     border-radius: 400px;    
@@ -111,9 +141,10 @@ nav a:hover{
     text-align: center;
     padding-bottom: 50px;
     background-image: url('../Photos/architecture-cafe-indoors-225448.jpg');
-    background-size: 100%;
+    background-size: 120%;
     background-position-y: -300px;
-    background-blend-mode: screen
+    background-blend-mode: screen;
+    background-attachment: fixed;
 }
 
 .services h1{
@@ -137,8 +168,7 @@ nav a:hover{
     margin: 10px;       
     text-align: center;
     background-color: #854801;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 20px;    
 }
 
 .services img, .visit img{    
@@ -160,14 +190,20 @@ nav a:hover{
 }
 
 /*reviews section*/
+
+.reviewslist{
+    padding: 0 100px 0 100px;   
+}
+
 .reviews h1{
     border: none;
     border-top: 20px solid white;
     border-bottom: 25px solid white;
-    background-color: #CC8209;
-    padding: 0;
+    background-color: #CC8209;    
     font-size: 70px;
-    
+    letter-spacing: 20px;
+    padding: 30px 0 30px 0;    
+    text-align: center;
 }
 
 /*contact section*/
