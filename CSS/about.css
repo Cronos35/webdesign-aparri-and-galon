@@ -3,8 +3,7 @@
     background-size: 100%;
     background-color: #854801;
     background-blend-mode: overlay;
-    background-attachment: fixed;
-    padding-bottom: 150px;
+    background-attachment: fixed;    
 }
 
 .about-detail {
@@ -13,19 +12,11 @@
     background-blend-mode: darken;   
     background-attachment: fixed; 
     background-size: 100%;
-    width: 100%;
+    flex-basis: 100vw;
     background-position-y: -5px;    
- }
-
- .about-detail h2 {    
-    font-size: 60px;    
-    margin-top: 50px;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    letter-spacing: 20px;
     text-align: center;
-}
+    padding: 70px 0 100px;
+ }
 
 .about-detail article {    
     font-size: 20px;
@@ -33,12 +24,4 @@
     margin-top: 30px;
     text-align: center;
     background: rgb(204, 130, 9, 0.8);    
-}
-
-.mini-separator {
-    display: flex;
-    border-bottom: 5px solid #E39C01;
-    justify-content: center;
-    margin: auto;
-    width: 20%;
 }

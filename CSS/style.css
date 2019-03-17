@@ -11,9 +11,30 @@ a{
     color: white;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family:futura;
     margin: 0;    
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing: 20px;
+}
+
+.--no-letter-spacing{
+    letter-spacing: 0;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 20px;
 }
 
 ul{
@@ -41,7 +62,7 @@ nav a{
     padding: 0 10px 0 10px
 }
 
-.firstleveldropdown{              
+.first__level__dropdown{              
     overflow: hidden;
     max-height: 0;
     display: flex;
@@ -50,16 +71,15 @@ nav a{
     flex-direction: column;
     width: 150px;
     justify-content: left;
-    transition: max-height 0.5s ease-in-out;                      
+    transition: max-height 0.5s ease-in-out;                     
 }
 
-.firstleveldropdown li{
+.first__level__dropdown li{
     width: 150px;    
     padding-left: 20px;                       
 }
 
-.firstleveldropdown a{
-    border-bottom: 3px solid white;     
+.first__level__dropdown a{       
     background-color: #B85301;
     color: white;      
 }
@@ -110,14 +130,14 @@ nav a:hover{
     background-attachment: fixed;
 }
 
-.showcase img{
-    height: 300px;
-    width: 300px;               
+.logo__circle img{
+    height: 400px;
+    width: 400px;               
 }
 
-.logocircle{
+.logo__circle{
     background-color: #E39C01;
-    padding: 70px;
+    padding: 40px;
     margin: 130px 0 30px 0;  
     border-radius: 400px;    
 }
@@ -131,7 +151,6 @@ nav a:hover{
 
 /*services area*/
 .services{
-    border-top: 5px solid #B85301;
     height: auto;
     width: 100%;
     background-color: #B85301;  
@@ -147,8 +166,8 @@ nav a:hover{
     background-attachment: fixed;
 }
 
-.services h1{
-    color:  #854801;
+.services--header{
+    color:  #B85301;
     border: none;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -199,9 +218,7 @@ nav a:hover{
     border: none;
     border-top: 20px solid white;
     border-bottom: 25px solid white;
-    background-color: #CC8209;    
-    font-size: 70px;
-    letter-spacing: 20px;
+    background-color: #CC8209;          
     padding: 30px 0 30px 0;    
     text-align: center;
 }
@@ -264,11 +281,6 @@ footer img{
     display: flex;
 }
 
-.mini-separator1 {
-    display: flex;
-    border-bottom: 5px solid white;
-    justify-content: center;
-    margin: auto;
-    width: 15%;
-    margin-bottom: 20px;
+@media (max-width:420px){
+
 }
