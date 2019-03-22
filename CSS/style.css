@@ -4,6 +4,7 @@ body{
     font-family: Aleo;
     color: white;
     overflow-x: hidden;
+    font-size: 20px;
 }
 
 a{
@@ -46,7 +47,7 @@ ul{
 nav{    
     background-color: #854801;    
     position: fixed;
-    width: 100%;        
+    width: 100vw;        
 }
 
 nav ul{
@@ -96,12 +97,13 @@ nav li, .navbarlink{
     align-items: center;
 }
 
-nav .mainlogo
+nav .main-logo
 {      
-    background-size: 300px;
-    background-repeat: no-repeat;
-    width: 300px;    
-    margin: 10px 50px 10px 10px;    
+    width: 300px;     
+}
+
+nav li, .navbarlink{
+    font-size: 20px;
 }
 
 .currentpage{
@@ -119,6 +121,7 @@ nav a:hover{
 
 .showcase{
     width: 100vw;    
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,8 +141,7 @@ nav a:hover{
 .logo__circle{
     background-color: #E39C01;
     padding: 40px;
-    margin: 130px 0 30px 0;  
-    border-radius: 400px;    
+    border-radius: 50%;
 }
 
 .tagline{
@@ -173,7 +175,7 @@ nav a:hover{
     padding-bottom: 30px;
 }
 
-.services ul{
+.services__items{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -229,26 +231,14 @@ nav a:hover{
     background-color:  #E39C01;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 20px;
+    justify-content: space-evenly;        
+    text-align: center;    
+    height: 60vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
-.visit h1{
-    border: none;
-    font-size: 50px;
-    padding: 30px 30px 10px 30px;
-
-}
-
-.visit p{
-    font-size: 25px;
-}
-
 .visit img{
-    width: 70px;
-    margin-bottom: 0;
+    width: 70px;    
 }
 
 /*footer*/
@@ -282,5 +272,100 @@ footer img{
 }
 
 @media (max-width:420px){
+    body{
+        font-size: 12px;
+    }
 
+    h1{
+        font-size: 40px;
+        letter-spacing: 10px;
+    }    
+
+    h2{
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 17px;
+    }
+    
+    h4{
+        font-size: 12px;
+    }
+
+    nav li, .navbarlink{
+        font-size: 12px;
+        height: 30px;
+    }
+
+    nav .main-logo{
+        width: 150px;
+    }
+
+    .tagline{
+        font-size: 25px;
+    }
+
+    .showcase, .services{
+        background-size: 300%;
+        background-position-x: -70vw;
+    }
+    
+    .logo__circle{
+        padding: 30px;
+    }
+
+    .logo__circle img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .services__items{
+        padding: 0 20px;
+    }
+
+    .services--header{
+        padding: 10px 0 10px;
+    }
+
+    .services__items li{
+        padding: 20px;
+        margin: 5px;
+    }
+
+    .services img{
+        width: 50px;        
+    }
+
+    .reviews h1{
+        padding: 8px 0 8px;
+        border-width: 10px;
+    }
+
+    .reviewslist{
+        padding: 0 30px 0 30px;   
+    }
+
+    .visit{
+        height: 40vh;
+        padding-top: 10px;
+    }
+
+    .visit img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .--column{
+        flex-direction: column;
+    }
+
+    footer img{
+        width: 150px;
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+    
 }

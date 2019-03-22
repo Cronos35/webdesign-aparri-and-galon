@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .head {
     background-image: url("../Photos/basket-chalkboard-coffee-shop-143642.jpg");    
     background-size: 100%;
@@ -33,7 +37,6 @@
 .menu-left {
     display: flex;
     flex-direction: row;
-    width: 500px;
     justify-content: start;    
 }
 
@@ -59,15 +62,34 @@
 }
 
 .reverse {
-    display: flex;
     flex-direction: row-reverse;
     text-align: right;  
     background-color: #B85301;      
 }
 
-@media (max-height: 420px){
-    .menu-left img {        
-        width: 100px;    
+@media (max-width: 420px){
+    .reviews div > img, .menu div > img {       
+        width: 100px;        
         height: 100px;
+    }
+
+    .head{
+        height: 70vh;
+        background-size: 300%;
+        background-position-x: -80vw;
+    }
+
+    .head h1{
+        font-size: 50px;
+        padding: 20px;
+        border-width: 10px;
+    }
+
+    .menu {        
+        padding: 20px 30px;
+    }
+    
+    .detail{
+        padding: 0 10px;   
     }
 }
